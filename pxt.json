@@ -1,11 +1,12 @@
 {
-    "name": "2024-p1a-alg-pxt-peewee-car-davidhavrda",
+    "name": "2024-p1a-alg-pxt-peewee-car-davidhavrda - Copy - Copy - Copy",
     "version": "0.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "pxt-magicbit-pca9685": "github:microbit-cz/pxt-magicbit-pca9685#1.0.0"
     },
     "files": [
         "README.md",
@@ -23,5 +24,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
