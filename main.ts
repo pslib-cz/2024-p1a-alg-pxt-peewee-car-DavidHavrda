@@ -1,8 +1,8 @@
 radio.setGroup(45)
 radio.setFrequencyBand(56)
 let array = []
-let x: number
 let y: number
+let x: number
 let leftSpeed: number
 let rightSpeed: number
 let serialNumber: number
@@ -23,9 +23,9 @@ radio.onReceivedString(function (receivedString: string) {
 
         if (x > 100) {
             leftSpeed += x / 8
-            rightSpeed -= x / 8
+            rightSpeed -= x /7
         } else if (x < -100) {
-            leftSpeed -= x / 8 * -1
+            leftSpeed -= x / 7 * -1
             rightSpeed += x / 8 * -1
         }
 
@@ -44,6 +44,6 @@ radio.onReceivedString(function (receivedString: string) {
         //aplikuje rychlost
         PCAmotor.MotorRun(PCAmotor.Motors.M1, -2 * leftSpeed)
         PCAmotor.MotorRun(PCAmotor.Motors.M4, rightSpeed)
-
+        console.log(`${rightSpeed}, ${-2*leftSpeed}`)
     }
 })
