@@ -22,11 +22,11 @@ radio.onReceivedString(function (receivedString: string) {
         rightSpeed = y / 4
 
         if (x > 100) {
-            leftSpeed += x / 10
-            rightSpeed -= x / 10
+            leftSpeed += x / 8
+            rightSpeed -= x / 8
         } else if (x < -100) {
-            leftSpeed -= x / 10 * -1
-            rightSpeed += x / 10 * -1
+            leftSpeed -= x / 8 * -1
+            rightSpeed += x / 8 * -1
         }
 
         // checkne jestli presahuje limit //
